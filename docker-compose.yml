@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  postgres: #pode ser colocado qualquer nome
+    image: postgres:latest #baixa a última versão do postgres
+    container_name: projeto_final #nome do serviço
+    restart: always #sempre que algo der errado, reinicia automaticamente
+    environment: #variáveis do sistema
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: projeto_final_db #seta o nome do banco de dados
+    ports:
+      - "5433:5432" #permite a comunicação do serviço com o host
+    volumes:
+      - postgres_data_projeto_final:/var/lib/postgresql/data #garante que os dados não sejam perdidos se o container for reiniciado, ele armazena os dados no local determinado
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_projeto_final
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5051:80"
+    depends_on:
+      - postgres #faz com que o pgadmin seja executado apenas depois do banco de dados ser executado 
+
+volumes:
+  postgres_data_projeto_final:
+
+  #Postgres não tem interface visual nativa, assim como todos os outros bancos de dados. 
+  #E  ntão devemos acessar pelo software ou por uma interface visual, ex: pgadmin
+  #docker-compose up --build --> comando para rodar o programa do docker
