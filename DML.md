@@ -18,8 +18,8 @@ VALUES (1, 'Leonardo Rodrigues', '124.456.789-00', '2003-01-24'),
 /* 1.2 -- INSERINDO EM PESSOA JURIDICA */
 INSERT INTO pessoa_juridica (id, nome, razao_social, cnpj)
 VALUES (4, 'Kaualcáida', 'Kauan Cáida.ltda', '91.739.439/0001-96'),
-       (5, 'Matias Trikas', 'São Matias Roscas.ltda', '22.444.433/0001-79'),
-       (6, 'André Judas', 'Talarica Quimicas.ltda', '05.070.470/0001-45');
+       (5, 'Matias', 'São Matias Roscas.ltda', '22.444.433/0001-79'),
+       (6, 'André', 'Talarica Quimicas.ltda', '05.070.470/0001-45');
 
 /* 2 -- INSERINDO EM QUARTOS */
 INSERT INTO hotel (id, nome_fantasia)
@@ -27,7 +27,7 @@ VALUES(1, 'Hotel Splannate');
 
 INSERT INTO quarto (hotel_id, preco, nome, tipo, capacidade, liberado)
 VALUES (1, 2.150, 'Suite meia noite', 'Suite', 40, FALSE),
-       (1, 1.500, 'premium night', 'Padrao', 20, FALSE),
+       (1, 1.500, 'Premium night', 'Padrao', 20, FALSE),
        (1, 2.000, 'Suite manhã', 'Suite', 30, TRUE);
 
 /* 3 -- INSERÇÃO COM DO ... BEGIN*/
