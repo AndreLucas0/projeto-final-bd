@@ -228,7 +228,7 @@ Todos os scripts estão localizados neste repositório.
 
 ### DTL (Data Transaction Language)
 
-> Caminho: `dtl.sql`
+> Caminho: `dml.sql`
 
 - Uso de `BEGIN`, `COMMIT`, `ROLLBACK`, `SAVEPOINT` para garantir a integridade transacional
 
