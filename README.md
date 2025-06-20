@@ -119,7 +119,7 @@ Sua relevância está diretamente associada à aplicação prática dos conceito
 
 ---
 
-### 🔗 Relacionamentos Entre as Entidades
+### Relacionamentos Entre as Entidades
 
 - Um **cliente** é especializado em **pessoa física** ou **pessoa jurídica** (relação 1:1).
 - Um **hotel** possui muitos:
@@ -196,7 +196,7 @@ A modelagem deste banco de dados foi construída considerando rigorosamente os p
 
 ## Scripts SQL
 
-Todos os scripts estão localizados na pasta `/sql`.
+Todos os scripts estão localizados neste repositório.
 
 ### DDL (Data Definition Language)
 
@@ -204,7 +204,7 @@ Todos os scripts estão localizados na pasta `/sql`.
 - Definição de chaves primárias e estrangeiras
 - Restrições de integridade
 
-> Caminho: `sql/ddl.sql`
+> Caminho: `ddl.sql`
 
 ### DML (Data Manipulation Language)
 
@@ -212,23 +212,23 @@ Todos os scripts estão localizados na pasta `/sql`.
 - Atualização de registros
 - Exclusão de registros
 
-> Caminho: `sql/dml.sql`
+> Caminho: `dml.sql`
 
 ### DQL (Data Query Language)
 
 - Consultas para recuperar dados relevantes
 
-> Caminho: `sql/dql.sql`
+> Caminho: `dql.sql`
 
 ### DCL (Data Control Language)
 
-> Caminho: `sql/dcl.sql`
+> Caminho: `dcl.sql`
 
 - Uso de `GRANT` e `REVOKE` para controle de acesso
 
 ### DTL (Data Transaction Language)
 
-> Caminho: `sql/dtl.sql`
+> Caminho: `dtl.sql`
 
 - Uso de `BEGIN`, `COMMIT`, `ROLLBACK`, `SAVEPOINT` para garantir a integridade transacional
 
